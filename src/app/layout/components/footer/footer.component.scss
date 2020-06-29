@@ -1,0 +1,78 @@
+@import "../../../../styles/app.scss";
+
+.img-dark-gray {
+  max-width: 84px;
+  max-height: 56px;
+  filter: grayscale(100%);
+}
+.img-ligth-gray {
+  max-width: 84px;
+  max-height: 56px;
+  filter: contrast(0%);
+}
+.container-footer {
+  display: flex;
+  margin: 0px;
+  padding: 8px 16px;
+  border-bottom: $border-custom;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-center {
+  align-items: center;
+}
+.row {
+  margin: 0px;
+  padding: 8px 16px;
+}
+.hidden-xs {
+  margin-left: 50px;
+}
+i {
+  margin: 0px 5px;
+}
+
+i:hover {
+  color: $my-color;
+}
+
+#logo-app {
+  max-width: 48px;
+  max-height: 48px;
+  margin-right: 5px;
+}
+.logo-app-social {
+  width: 156px;
+  height: 54px;
+  margin-right: 25px;
+}
+
+h6 {
+  margin: 12px 0px;
+}
+
+.h6-custom{
+   background-color: var(--color-body-background);
+  h6{
+    font-size: 14px + var($size-font);
+    cursor: pointer;
+  }
+  h6:hover {
+    color: $my-color;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.light {
+  color: white;
+}
+
+.dark{
+  color: black;
+}

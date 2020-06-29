@@ -1,0 +1,124 @@
+<div class="container-footer">
+    <ng-container *ngIf="color$ | async as color; else elseTemplate">
+        <img class="img-ligth-gray" src="../../../../assets/images/logo-sky.png" alt="Avatar">
+    </ng-container>
+    <ng-template #elseTemplate>
+        <img class="img-dark-gray" src="../../../../assets/images/logo-sky.png" alt="Avatar">
+    </ng-template>
+
+    <div class="container flex-end flex-center">
+        <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <div class="row">
+            <img id="logo-app" src="../../../../assets/images/mysky.png">
+            <h6 class="flex-center">Baixe no seu celular o app SKY e divirta-se.</h6>
+            <div class="row">
+                <ng-container *ngIf="color$ | async as color; else elseTemplateLogo">
+                    <div class="d-none d-md-block d-lg-block d-xl-block">
+                        <img class="logo-app-social"
+                            src="../../../../assets/images/button-apple-store-dark-default.svg">
+                        <img class="logo-app-social"
+                            src="../../../../assets/images/button-google-play-dark-default.svg">
+                    </div>
+                </ng-container>
+                <ng-template #elseTemplateLogo>
+                    <div class="d-none d-md-block d-lg-block d-xl-block">
+                        <img class="logo-app-social"
+                            src="../../../../assets/images/button-apple-store-light-default.svg">
+                        <img class="logo-app-social-black"
+                            src="../../../../assets/images/button-google-play-light-default.svg">
+                    </div>
+                </ng-template>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <div class="row">
+            <div class="col-sm-6">
+                <h6 class="flex-center">Sobre</h6>
+                <ul>
+                    <ng-container *ngIf="color$ | async as color; else elseTemplateColorLrt">
+                        <li class="light">Nossa historia</li>
+                        <li class="light">Imprensa</li>
+                        <li class="light">Prêmios conquistados</li>
+                        <li class="light">Credenciamento</li>
+                        <li class="light">Trabalhe com a gente</li>
+                        <li class="light">Promoção</li>
+                    </ng-container>
+                    <ng-template #elseTemplateColorLrt>
+                        <li class="dark">Nossa historia</li>
+                        <li class="dark">Imprensa</li>
+                        <li class="dark">Prêmios conquistados</li>
+                        <li class="dark">Credenciamento</li>
+                        <li class="dark">Trabalhe com a gente</li>
+                        <li class="dark">Promoção</li>
+                    </ng-template>
+
+                </ul>
+                <h6 class="flex-center">Ajuda</h6>
+                <ul>
+                    <ng-container *ngIf="color$ | async as color; else elseTemplateHelp">
+                        <li class="light">Central de ajuda</li>
+                    </ng-container>
+                    <ng-template #elseTemplateHelp>
+                        <li class="dark">Central de ajuda</li>
+                    </ng-template>
+                    
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <h6 class="flex-center">Nossas Responsabilidades</h6>
+                <ul>
+                    <ng-container *ngIf="color$ | async as color; else elseTemplateColorRlt">
+                        <li class="light">Conselho aos usuaários</li>
+                        <li class="light">Pesquisa Anatel</li>
+                        <li class="light">Relatórios de transparência</li>
+                        <li class="light">Resposnabilidade social</li>
+                        <li class="light">Acessibilidade</li>
+                    </ng-container>
+                    <ng-template #elseTemplateColorRlt>
+                        <li class="dark">Conselho aos usuaários</li>
+                        <li class="dark">Pesquisa Anatel</li>
+                        <li class="dark">Relatórios de transparência</li>
+                        <li class="dark">Resposnabilidade social</li>
+                        <li class="dark">Acessibilidade</li>
+                    </ng-template>
+                </ul>
+                <h6 class="flex-center">SKY Empresas</h6>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row h6-custom">
+    <ng-container *ngIf="color$ | async as color; else elseTemplateBar">
+        <h6 class="light">Inicío |</h6>&nbsp;
+        <h6 class="light">Política de Privacidade |</h6>&nbsp;
+        <h6 class="light">Contratos gerais |</h6>&nbsp;
+        <h6 class="light">Contratos pré pagos |</h6>&nbsp;
+        <h6 class="light">Cancelamento |</h6>&nbsp;
+        <h6 class="light">Ouvidoria |</h6>&nbsp;
+        <h6 class="light">Consumidor.gov</h6>
+    </ng-container>
+    <ng-template #elseTemplateBar>
+        <h6 class="dark">Inicío |</h6>&nbsp;
+        <h6 class="dark">Política de Privacidade |</h6>&nbsp;
+        <h6 class="dark">Contratos gerais |</h6>&nbsp;
+        <h6 class="dark">Contratos pré pagos |</h6>&nbsp;
+        <h6 class="dark">Cancelamento |</h6>&nbsp;
+        <h6 class="dark">Ouvidoria |</h6>&nbsp;
+        <h6 class="dark">Consumidor.gov</h6>
+    </ng-template>
+</div>
+<div class="row">
+    <h6>
+        ® Todos os direitos reservados 2018. Todas as marcas SKY e qualquer propriedade intelectual inserida nelas são de propriedade da SKY Internacional AG e usadas pela SKY Serviços de Banda Larga LTDA. mediante licença.
+    </h6>
+</div>

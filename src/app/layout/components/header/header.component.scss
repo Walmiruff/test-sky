@@ -1,0 +1,36 @@
+@import '../../../../styles/app.scss';
+
+:host {
+    img {
+        max-width: 84px;
+        max-height: 56px;
+        filter: contrast(85%);
+    }
+    span {
+        margin-left: 6px;
+        font-family: $font-primary;
+        font-size: calc(18px + var(--size-font));
+        &:hover {
+            color: invert($color-header-background);
+        }
+    }
+    .navbar {
+        background-color: var(--color-header-background);
+        border-bottom: $border-custom;
+        .navbar-brand {
+            margin-right: 80px;
+        }
+        a {
+            margin: 0 6px 0 6px;
+            cursor: pointer;
+            &:hover {
+                color: invert($color-header-background);
+            }
+        }
+        .flex-end {
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    }
+
+}

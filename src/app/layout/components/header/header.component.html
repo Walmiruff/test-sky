@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+    <img class="navbar-brand" src="../../../../assets/images/logo-sky.png" alt="Avatar">
+    <button class="navbar-toggler" type="button" (click)="toggleSidebar()">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fa fa-bars text-muted" aria-hidden="true"></i>
+    </button>
+    <div class="collapse navbar-collapse">
+        <div class="container navbar-nav">
+            <a class="fa fa-adjust" (click)="changeColor()"></a>
+            <a class="fa fa-plus-circle" (click)="plusSizeFont()"></a>
+            <a class="fa fa-minus-circle" (click)="minusSizeFont()"></a>
+        </div>
+        <div class="container flex-end">
+            <a class="fa fa-user"><span>Entrar</span></a>
+        </div>
+        <app-search></app-search>
+    </div>
+</nav>

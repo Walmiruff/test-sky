@@ -1,0 +1,14 @@
+<section id="tabs" [hidden]="headerHidden">
+        <div class="container-flex">
+            <div class="col-xs-12 ">
+                <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link col-xs-4" [routerLinkActive]="['active']" [routerLink]="['/layout/home']" data-toggle="tab" role="tab">Início</a>
+                        <a class="nav-item nav-link col-xs-4" [routerLinkActive]="['active']"  routerLink="/layout/films" data-toggle="tab" role="tab">Filmes</a>
+                        <a class="nav-item nav-link col-xs-4" [routerLinkActive]="['active']"  routerLink="/layout/series" data-toggle="tab" role="tab">Séries</a>
+                        <a class="nav-item nav-link col-xs-4" [routerLinkActive]="['active']"  routerLink="/layout/channels" data-toggle="tab" role="tab">Canais</a>
+                    </div>
+                </nav>            
+            </div>
+        </div>
+</section>

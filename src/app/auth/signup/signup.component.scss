@@ -1,0 +1,8 @@
+// shared css for the login and signup page
+@import "../login/login.component.scss";
+
+img {
+    max-width: 252px;
+    max-height: 168px;
+    filter: contrast(85%);
+}

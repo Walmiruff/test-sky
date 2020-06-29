@@ -1,0 +1,67 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive, collapsed: collapsed}">
+    <div class="toggle-button" [ngClass]="{collapsed: collapsed}" (click)="toggleCollapsed()">
+        <i [class]="iconSideBar"></i>&nbsp;
+    </div>
+
+    <div class="list-group">
+
+        <a [routerLink]="['/layout/home']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-home"></i>&nbsp;
+            <span>Início</span>
+        </a>
+
+        <a routerLink="/layout/films" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-film"></i>&nbsp;
+            <span>Filmes</span>
+        </a>
+
+        <a routerLink="/layout/series" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-file-video-o"></i>&nbsp;
+            <span>Séries</span>
+        </a>
+
+        <a routerLink="/layout/channels" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-television"></i>&nbsp;
+            <span>Canais</span>
+        </a>
+
+        <div>
+            <hr id="separator">
+        </div>
+
+        <div id="cursor-customer" (click)="changeColor()">
+            <a class="list-group-item">
+                <i class="fa fa-adjust"></i>&nbsp;
+                <span>Modo Noturno</span>
+            </a>
+        </div>
+
+        <div class="header-fields">
+
+            <div class="nested-menu">
+                <a class="list-group-item" style="padding-right: 5px; padding-left: 17px"
+                    (click)="addExpandClass('profile')" [hidden]="collapsed">
+                    <img src="../../../../assets/images/avatar.png" alt="Avatar">
+                    <span>&nbsp; John</span>
+                    <span class="icon"><i class="fa fa-fw fa-gear"></i></span>
+                </a>
+                <li class="nested" [class.expand]="showMenu === 'profile'">
+                    <ul class="submenu">
+                        <li>
+                            <p>
+                                <span><i class="fa fa-user"></i>Perfil</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p [routerLink]="['/login']" style="cursor: pointer" (click)="onLoggedout()">
+                                <span><i class="fa fa-fw fa-power-off"></i>Sair</span>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+
+        </div>
+    </div>
+
+</nav>
